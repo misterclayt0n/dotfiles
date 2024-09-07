@@ -27,7 +27,7 @@
   "theme": {
     "mode": "system",
     "light": "clayton poimandres",
-    "dark": "clayton poimandres"
+    "dark": "Clayton Darker"
   },
   "format_on_save": "off",
   "vim": {
@@ -48,7 +48,7 @@
     "working_directory": "current_project_directory"
   },
   "tab_bar": {
-    "show": false
+    "show": true
   },
   "scrollbar": {
     "show": "never"
@@ -68,5 +68,10 @@
         "javascript": { "tagAutoclosing": true }
       }
     }
+  },
+  "command_aliases": {
+    "W": "w",
+    "Wq": "wq",
+    "Q": "q"
   }
 }

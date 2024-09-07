@@ -59,13 +59,16 @@ eval "$(fzf --zsh)"
 alias "vim"=nvim
 alias "lzd"=lazydocker
 alias "l"="ls -l"
+alias "focus"=focus-linux
 
 # zed? i supppose?
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/software/:$PATH
+export PATH=$HOME/software/zig-linux-x86_64-0.14.0-dev.1417+242d268a0/:$PATH
 # export PATH=$HOME/software/zig-linux-x86-0.13.0/:$PATH
-export PATH=$HOME/software/zls-x86_64-linux/:$PATH
+export PATH=$HOME/software/zls/zig-out/bin/:$PATH
 export PATH=$HOME/software/quarto-1.5.55/bin/:$PATH
+export PATH=$HOME/software/:$PATH
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.config/emacs/bin/
@@ -92,3 +95,9 @@ export PATH="$PATH:/home/mister/.turso"
 autoload -U compinit
 compinit
 source <(jj util completion zsh)
+
+# Odin
+export PATH="$PATH:/home/mister/software/Odin:$PATH"
+
+# boomer
+export PATH="$PATH:/home/mister/software/boomer:$PATH"
