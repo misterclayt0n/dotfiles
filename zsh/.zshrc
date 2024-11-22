@@ -54,7 +54,7 @@ eval "$(fzf --zsh)"
 
 # Alias.
 alias "vim"=nvim
-alias "z"=zeditor
+alias "zed"=zeditor
 alias ls="ls --color=auto"
 
 # NVM
