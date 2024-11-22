@@ -1,0 +1,11 @@
+[user]
+name = "misterclayt0n"
+email = "daviarantes13@gmail.com"
+
+[aliases]
+b = ["bookmark"]
+n = ["new"]
+
+[ui]
+default-command = "log"
+editor = "zeditor --wait"
