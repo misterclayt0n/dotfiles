@@ -1,0 +1,144 @@
+[
+  {
+    // normal and visual mode
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "space y ": ["workspace::SendKeystrokes", "\" + y \""],
+      "g i": "editor::GoToImplementation",
+      "g t": "editor::GoToTypeDefinition",
+      "g r": "editor::FindAllReferences",
+      "] d": "editor::GoToDiagnostic",
+      "[ d": "editor::GoToPrevDiagnostic",
+      "space c a": "editor::ToggleCodeActions",
+      "space c r": "editor::Rename",
+      "space c d": "diagnostics::Deploy",
+      "space c /": "search::FocusSearch",
+      "space f m": "editor::Format",
+      "space h t": "theme_selector::Toggle",
+      "alt up": "editor::MoveLineUp",
+      "alt down": "editor::MoveLineDown",
+      "alt-l": "workspace::ToggleRightDock",
+      "alt-j": "terminal_panel::ToggleFocus",
+      "alt-h": "workspace::ToggleLeftDock",
+      "space f f": "pane::RevealInProjectPanel",
+      "space c w": "editor::ToggleSoftWrap",
+      "space c z": "workspace::ToggleCenteredLayout",
+      "space m p": "markdown::OpenPreview",
+      "space m P": "markdown::OpenPreviewToTheSide",
+      "alt-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
+        }
+      ],
+      "ctrl-alt-d": [
+        "editor::SelectPrevious",
+        {
+          "replace_newest": false
+        }
+      ],
+      "g l": "editor::SplitSelectionIntoLines"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      // "down": ["workspace::SendKeystrokes", "4 j"]
+      // "up": ["workspace::SendKeysrokes", "4 k"]
+      "U": "editor::Redo",
+      "space space": "file_finder::Toggle",
+      "ctrl-w |": "pane::SplitRight",
+      "ctrl-w -": "pane::SplitDown",
+      "ctrl-w d": "pane::CloseActiveItem",
+      "ctrl-w p": "pane::ActivatePrevItem",
+      "ctrl-w n": "pane::ActivateNextItem",
+      "space ,": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+    "bindings": {
+      "shift-s": [
+        "vim::PushOperator",
+        {
+          "AddSurrounds": {}
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // e.g.
+      // "j j": "vim::NormalBefore" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      // put key-bindings here (in addition to above) if you want them to
+      // work when no editor exists
+      // e.g.
+      // "space f": "file_finder::Toggle"
+      "alt-l": "workspace::ToggleRightDock",
+      "alt-j": "workspace::ToggleBottomDock",
+      "alt-h": "workspace::ToggleLeftDock",
+      "ctrl w": null
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "alt-l": "workspace::ToggleRightDock",
+      "alt-j": "workspace::ToggleBottomDock",
+      "alt-h": "workspace::ToggleLeftDock",
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-w |": "pane::SplitRight",
+      "ctrl-w -": "pane::SplitDown",
+      "ctrl-w d": "pane::CloseActiveItem",
+      "ctrl-w p": "pane::ActivatePrevItem",
+      "ctrl-w n": "pane::ActivateNextItem",
+      "alt-l": "workspace::ToggleRightDock",
+      "alt-j": "workspace::ToggleBottomDock",
+      "alt-h": "workspace::ToggleLeftDock",
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl w": null
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "r": "project_panel::Rename",
+      "x": "project_panel::Cut",
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "alt-l": "workspace::ToggleRightDock",
+      "alt-j": "workspace::ToggleBottomDock"
+    }
+  }
+]

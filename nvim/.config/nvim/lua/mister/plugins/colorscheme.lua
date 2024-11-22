@@ -1,0 +1,15 @@
+return {
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{ "blazkowolf/gruber-darker.nvim" },
+	{ "rose-pine/neovim", name = "rose-pine" },
+	{ "NLKNguyen/papercolor-theme", name = "papercolor" },
+	{ "sindresorhus/focus" },
+	{ "AlessandroYorba/Despacio" },
+	{ "huyvohcmc/atlas.vim" },
+	{ "plan9-for-vimspace/acme-colors" },
+	{ "aditya-azad/candle-grey" },
+	{ "sainnhe/gruvbox-material" },
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+	{ "kdheepak/monochrome.nvim" },
+	{ "olivercederborg/poimandres.nvim" },
+}
