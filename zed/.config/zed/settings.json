@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "assistant": {
+    "version": "2",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "dock": "left"
+  },
   "languages": {
     "Go": {
       "show_inline_completions": false
@@ -18,14 +26,14 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Ying Yang",
-    "dark": "Ying Yang"
+    "light": "clayton poimandres",
+    "dark": "Clayton Darker"
   },
   "format_on_save": "off",
   "vim": {
     "use_system_clipboard": "never"
   },
-  "relative_line_numbers": false,
+  "relative_line_numbers": true,
   "project_panel": {
     "dock": "right"
   },
@@ -36,9 +44,31 @@
   "terminal": {
     "env": {
       "EDITOR": "zed --wait"
+    },
+    "working_directory": "current_project_directory"
+  },
+  "tab_bar": {
+    "show": true
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "vertical_scroll_margin": 0,
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "lsp": {
+    "vscode-html-language-server": {
+      "settings": {
+        "html": { "tagAutoclosing": true },
+        "css": { "tagAutoclosing": true },
+        "js/ts": { "tagAutoclosing": true },
+        "javascript": { "tagAutoclosing": true }
+      }
     }
   },
-  "scrollbar": { "show": "never" },
   "command_aliases": {
     "W": "w",
     "Wq": "wq",
