@@ -1,0 +1,65 @@
+/* Aplicação de Gruvbox no wlogout */
+* {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-weight: bold;
+  font-size: 24px;
+  color: #ebdbb2; /* Gruvbox neutral text */
+  transition: background-color 0.5s, color 0.3s;
+}
+
+window {
+  background-color: #1d2021; /* Gruvbox darkest */
+  border-radius: 10px;
+}
+
+button {
+  color: #ebdbb2; /* Gruvbox neutral */
+  background-color: #282828; /* Gruvbox dark */
+  border: 2px solid #504945; /* Gruvbox gray */
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:active,
+button:hover {
+  background-color: #458588; /* Gruvbox blue highlight */
+  color: #ebdbb2;
+  border-color: #83a598; /* Lighter Gruvbox blue */
+}
+
+button:focus {
+  background-color: #689d6a; /* Gruvbox green */
+  color: #ebdbb2;
+  border-color: #8ec07c; /* Gruvbox light green */
+}
+
+/* Ícones */
+#lock {
+  background-image: url("/home/mister/.config/wlogout/icons/lock_white.png");
+}
+
+#logout {
+  background-image: url("/home/mister/.config/wlogout/icons/logout_white.png");
+}
+
+#suspend {
+  background-image: url("/home/mister/.config/wlogout/icons/suspend_white.png");
+}
+
+#hibernate {
+  background-image: url("/home/mister/.config/wlogout/icons/hibernate_white.png");
+}
+
+#shutdown {
+  background-image: url("/home/mister/.config/wlogout/icons/shutdown_white.png");
+}
+
+#reboot {
+  background-image: url("/home/mister/.config/wlogout/icons/reboot_white.png");
+}
+

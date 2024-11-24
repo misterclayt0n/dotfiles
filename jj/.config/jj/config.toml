@@ -9,3 +9,6 @@ n = ["new"]
 [ui]
 default-command = "log"
 editor = "zeditor --wait"
+
+[git]
+auto-local-bookmark = true

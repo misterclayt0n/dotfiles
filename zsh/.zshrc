@@ -61,3 +61,15 @@ alias ls="ls --color=auto"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Go path
+export PATH="$PATH:/home/mister/go/bin:$PATH"
+
+# Doom emacs
+export PATH="$PATH:/home/mister/.config/emacs/bin:$PATH"
+
+# ass = todo app
+export PATH="$PATH:/home/mister/software/todo/target/debug/:$PATH"
+ass
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

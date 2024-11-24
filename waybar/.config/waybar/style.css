@@ -1,0 +1,94 @@
+* {
+	font-family: "JetBrainsMonoNerdFontMono";
+	font-weight: bold;
+	min-height: 0;
+	font-size: 102%;
+	padding: 1px;
+	color: #ebdbb2; /* Gruvbox neutral text */
+}
+
+window#waybar {
+	background-color: #1d2021; /* Gruvbox darkest */
+	transition: background-color 0.5s;
+}
+
+window#waybar.hidden {
+	opacity: 0.5;
+}
+
+tooltip {
+	background-color: #282828; /* Gruvbox dark background */
+	color: #ebdbb2; /* Neutral text */
+	border-radius: 5px;
+	padding: 5px;
+}
+
+tooltip label {
+	padding: 5px;
+	color: #ebdbb2;
+}
+
+#custom-cava,
+#clock,
+#cpu,
+#memory,
+#mpris,
+#network,
+#pulseaudio,
+#temperature,
+#workspaces,
+#custom-menu,
+#custom-swaync {
+	background-color: #1d2021; /* Match Waybar background */
+	color: #ebdbb2; /* Gruvbox neutral */
+	border-radius: 5px;
+	padding: 5px;
+}
+
+/* Window settings */
+#window {
+	background-color: #1d2021; /* Gruvbox darkest */
+	color: #ebdbb2;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+/* Workspaces buttons */
+#workspaces button {
+	background-color: #1d2021; /* Match Waybar background */
+	color: #ebdbb2;
+	border-radius: 4px;
+	padding: 4px 6px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active and focused buttons */
+#taskbar button.active,
+#workspaces button.active {
+	background-color: #504945; /* Gruvbox gray */
+	color: #ebdbb2; /* Neutral text */
+	border-radius: 4px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/* Critical temperature */
+#temperature.critical {
+	background-color: #cc241d; /* Subtle Gruvbox red */
+	color: #ebdbb2;
+	border-radius: 4px;
+	padding: 4px 6px;
+}
+
+/* Urgent workspace */
+#workspaces button.urgent {
+	background-color: #1d2021; /* Match Waybar background */
+	color: #fbf1c7; /* Gruvbox light text */
+}
+
+/* Focused workspace */
+#workspaces button.focused {
+	background-color: #1d2021; /* Match Waybar background */
+	color: #ebdbb2; /* Neutral text */
+	border-radius: 4px;
+	padding: 4px 6px;
+}

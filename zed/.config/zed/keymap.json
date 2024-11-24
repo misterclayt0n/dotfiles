@@ -3,7 +3,7 @@
     // normal and visual mode
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      "space y ": "editor::Copy",
+      "space y ": ["workspace::SendKeystrokes", "\" + y \""],
       "g i": "editor::GoToImplementation",
       "g r": "editor::FindAllReferences",
       "] d": "editor::GoToDiagnostic",
