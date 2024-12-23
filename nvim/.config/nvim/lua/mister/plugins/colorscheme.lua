@@ -12,4 +12,6 @@ return {
 	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 	{ "kdheepak/monochrome.nvim" },
 	{ "olivercederborg/poimandres.nvim" },
+	{ "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
+	{ "sainnhe/gruvbox-material" },
 }

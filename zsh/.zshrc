@@ -56,6 +56,8 @@ eval "$(fzf --zsh)"
 alias "vim"=nvim
 alias "zed"=zeditor
 alias ls="ls --color=auto"
+alias hx="helix"
+alias pt="project-tracker"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -68,8 +70,25 @@ export PATH="$PATH:/home/mister/go/bin:$PATH"
 # Doom emacs
 export PATH="$PATH:/home/mister/.config/emacs/bin:$PATH"
 
-# ass = todo app
-export PATH="$PATH:/home/mister/software/todo/target/debug/:$PATH"
-ass
+# Project tracker
+export PATH="$PATH:/home/mister/code/project-tracker/target/debug:$PATH"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+export EDITOR=zeditor
+
+# Move by word with arrow keys 
+bindkey ";5C" forward-word
+bindkey ";3C" forward-word
+bindkey ";5D" backward-word
+bindkey ";3D" backward-word
+
+. "$HOME/.limbo/env"
+export PATH=/usr/bin:$PATH
+
+# bun completions
+[ -s "/home/mister/.bun/_bun" ] && source "/home/mister/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

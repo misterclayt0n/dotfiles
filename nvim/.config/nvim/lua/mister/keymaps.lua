@@ -42,14 +42,14 @@ keymap.set("v", "<leader>p", '"_dP')
 keymap.set("v", "<leader>y", '"+y')
 
 -- buffer navigation
-keymap.set("n", "<C-w>p", vim.cmd.bprevious)
-keymap.set("n", "<C-w>n", vim.cmd.bnext)
-keymap.set("n", "<C-w>d", vim.cmd.bdelete)
+keymap.set("n", "<C-b>p", vim.cmd.bprevious)
+keymap.set("n", "<C-b>n", vim.cmd.bnext)
+keymap.set("n", "<C-b>d", vim.cmd.bdelete)
 
 -- windows
 keymap.set("n", "<C-w>|", vim.cmd.vsplit)
 keymap.set("n", "<C-w>-", vim.cmd.split)
-keymap.set("n", "<C-w>w", vim.cmd.close)
+keymap.set("n", "<C-w>d", vim.cmd.close)
 
 -- neogit
 keymap.set("n", "<leader>gg", vim.cmd.Neogit)
@@ -79,3 +79,11 @@ vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()") -- command
 
 -- scratch buffer
 keymap.set("n", "<leader>bs", ":Scratch<CR>")
+
+keymap.set("n", "gp", "<C-o>", { desc = "Go to previous position" })
+keymap.set("n", "gn", "<C-i>", { desc = "Go to next position" })
+
+keymap.set('i', '<C-h>', '<Esc>dvbi')
+
+keymap.set('n', '<leader>cc', ':Compile<CR>')
+keymap.set('n', '<leader>cC', ':Recompile<CR>')
