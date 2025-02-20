@@ -73,6 +73,9 @@ export PATH="$PATH:/home/mister/.config/emacs/bin:$PATH"
 # Project tracker
 export PATH="$PATH:/home/mister/code/project-tracker/target/debug:$PATH"
 
+# Zigoso
+export PATH="$PATH:/home/mister/software/zig-linux-x86_64-0.14.0::$PATH"
+
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export EDITOR=zeditor
