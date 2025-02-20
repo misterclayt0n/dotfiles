@@ -92,3 +92,17 @@ export PATH=/usr/bin:$PATH
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/mister/.lmstudio/bin"
+
+# Turso
+export PATH="$PATH:/home/mister/.turso"
+
+# pnpm
+export PNPM_HOME="/home/mister/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

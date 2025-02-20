@@ -8,7 +8,7 @@ n = ["new"]
 
 [ui]
 default-command = "log"
-editor = "zeditor --wait"
+editor = "helix"
 
 [git]
 auto-local-bookmark = true

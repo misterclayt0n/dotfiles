@@ -50,6 +50,10 @@ keymap.set("n", "<C-b>d", vim.cmd.bdelete)
 keymap.set("n", "<C-w>|", vim.cmd.vsplit)
 keymap.set("n", "<C-w>-", vim.cmd.split)
 keymap.set("n", "<C-w>d", vim.cmd.close)
+keymap.set("n", "<C-w>k", ":KittyNavigateUp<CR>")
+keymap.set("n", "<C-w>j", ":KittyNavigateDown<CR>")
+keymap.set("n", "<C-w>h", ":KittyNavigateLeft<CR>")
+keymap.set("n", "<C-w>l", ":KittyNavigateRight<CR>")
 
 -- neogit
 keymap.set("n", "<leader>gg", vim.cmd.Neogit)

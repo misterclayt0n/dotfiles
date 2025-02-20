@@ -14,4 +14,16 @@ return {
 	{ "olivercederborg/poimandres.nvim" },
 	{ "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
 	{ "sainnhe/gruvbox-material" },
+	{ "CreaturePhil/vim-handmade-hero" },
+	-- { "alljokecake/naysayer-theme.nvim" },
+	{ "whizikxd/naysayer-colors.nvim" },
+	{
+		name = "hello",
+		dir = vim.fn.stdpath("config") .. "/colors",
+		lazy = false,
+		priority = 1000, -- Garante que seja carregado antes de outros plugins
+		config = function()
+			vim.cmd("colorscheme naysayer")
+		end,
+	},
 }

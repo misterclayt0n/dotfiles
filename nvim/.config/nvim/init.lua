@@ -22,7 +22,7 @@ require("mister.configs.catppuccin")
 require("mister.configs.gruvbox")
 require("mister.configs.conform")
 
-vim.cmd([[colorscheme gruvbox-material]])
+vim.cmd([[colorscheme naysayer]])
 
 -- workaround for rust analyzer being a piece of shit (or maybe neovim itself, don't know, don't care)
 for _, method in ipairs({ 'textDocument/diagnostic', 'workspace/diagnostic' }) do
