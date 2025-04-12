@@ -7,7 +7,7 @@ b = ["bookmark"]
 n = ["new"]
 
 [ui]
-default-command = "log"
+default-command = "status"
 editor = "helix"
 
 [git]
